@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
@@ -33,6 +34,9 @@ public class Controller {
 
     @FXML
     private Button SUBMITBUTTON;
+
+    @FXML
+    private Label resultLabel;
 
     @FXML
     private TextField TEXTFIEL1;
@@ -68,7 +72,11 @@ public class Controller {
             subjects.add("OS");
         }
 
-       
+        String result = "Name: " + name + "\n"
+                + "DOB: " + dob + "\n"
+                + "Department: " + department + "\n"
+                + "Subjects: " + subjects;
+        resultLabel.setText(result);
     }
 
 }
