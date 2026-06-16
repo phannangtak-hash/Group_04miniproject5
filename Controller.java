@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -33,5 +36,39 @@ public class Controller {
 
     @FXML
     private TextField TEXTFIEL1;
+
+    @FXML
+    void submit(ActionEvent event) {
+        String name = TEXTFIEL1.getText();
+
+        String dob = "N/A";
+        if (BIRTHDATE != null && BIRTHDATE.getValue() != null) {
+            dob = BIRTHDATE.getValue().toString();
+        }
+
+        String department = "N/A";
+        if (AMS.isSelected()) {
+            department = "AMS";
+        }
+        if (GIC.isSelected()) {
+            department = "GIC";
+        }
+        if (GTR.isSelected()) {
+            department = "GTR";
+        }
+
+        ArrayList<String> subjects = new ArrayList<>();
+        if (NETWORK.isSelected()) {
+            subjects.add("NETWORK");
+        }
+        if (OOP.isSelected()) {
+            subjects.add("OOP");
+        }
+        if (OS.isSelected()) {
+            subjects.add("OS");
+        }
+
+       
+    }
 
 }

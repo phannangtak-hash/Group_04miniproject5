@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="213.0" layoutY="52.0" text="MINI PROJECT 4" textFill="#cf0e60">
@@ -46,7 +45,7 @@
       <CheckBox fx:id="NETWORK" layoutX="224.0" layoutY="364.0" mnemonicParsing="false" text="NETWORK" />
       <CheckBox fx:id="OS" layoutX="225.0" layoutY="400.0" mnemonicParsing="false" text="OS" />
       <CheckBox fx:id="OOP" layoutX="227.0" layoutY="435.0" mnemonicParsing="false" text="OOP" />
-      <Button fx:id="SUBMITBUTTON" layoutX="249.0" layoutY="502.0" mnemonicParsing="false" text="SUBMIT" />
+      <Button fx:id="SUBMITBUTTON" layoutX="249.0" layoutY="502.0" mnemonicParsing="false" onAction="#submit" text="SUBMIT" />
       <Label layoutX="407.0" layoutY="505.0" text="RESULT">
          <font>
             <Font size="14.0" />
